@@ -1,0 +1,170 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.main-nav{
+    height: 7rem;
+    width: 100%;
+    background-color: rgb(33,33,33);
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.logo{
+    position: absolute;
+    top: .2rem;
+}
+.logo h1{
+    color: #fff;
+    margin-left: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+}
+.mlogo{
+    padding: .2rem .9rem .6rem .7rem;
+    background-color: green;
+    color: #fff;
+    border-radius: 50%;
+}
+.cart{
+    position: absolute;
+    right: 3rem;
+}
+.cart i{
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.myaccount{
+    position: absolute;
+    right: 9rem;
+    top: 2.5rem;
+}
+.myaccount p{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.modal-header{
+    height: 9rem !important;
+}
+.login{
+    margin-left: 6.2rem;
+}
+.search{
+    position: absolute;
+    right: 23rem;
+}
+@media(max-width:1099px){
+    .search input{
+        width: 460px !important;
+    }
+}
+@media(max-width:853px){
+    .search input{
+        width: 300px !important;
+    }
+}
+@media(max-width:682px){
+    .search input{
+        width: 200px !important;
+    }
+    .search{
+        right: 20rem;
+    }
+    .addtocartmodal{
+        width: 85% !important;
+    }
+}
+
+@media(max-width:555px){
+    .main-nav{
+        height: 9rem;
+    }
+    .logo h1{
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .cart{
+        top: 2.1rem;
+    }
+    .cart i{
+        font-size: 2rem;
+    }
+    .search input{
+        height: 28px;
+        margin-top: 4rem;
+        margin-left: 2rem;
+    }
+    .search{
+        right: 20rem;
+        position:static;
+        width: 115% !important;
+    }
+    .myaccount{
+        position: absolute;
+        right: 2.9rem;
+        top: 5rem;
+    }
+    #hidemyaccount{
+        display: block !important;
+        color: #fff !important;
+        font-size: 2rem !important;
+        margin-top: 0.5rem;
+    }
+    #showmyaccount{
+        display:none;
+    }
+    .addtocartmodal{
+        width:85% !important;
+    }
+
+}
+.cartmodal{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+.cartheader{
+    width: 100%;
+    height: 6.5rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: absolute;
+    left: 0;
+}
+
+.mycart h1{
+    color: #fff;
+    font-size: 1.7rem;
+    margin-left: 1rem;
+}
+.cartheader i{
+    color: #fff;
+    margin-right: 2rem;
+}
+.start-shopping{
+    background-color: #e96125;
+    padding: 1.4rem 17rem !important;
+    position: absolute;
+    top: 56.5rem;
+    left: 7%;
+    right: 5%;
+    color: #fff;
+    font-weight: 600;
+}
+.start-shopping:hover{
+    color: #fff !important;
+    background-color:#a54217;
+}
+#hidemyaccount{
+    display: none;
+}
